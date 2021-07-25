@@ -1,9 +1,12 @@
 {% extends 'base.html' %}
 
 {% block content %}
+    <div style="height: 20rem; background-color: #38df81; border-radius: 1rem; margin: 2rem; ">
 
-    <div style="height: 20rem; background-color: #38df81; border-radius: 1rem; margin: 2rem;">
-            content test!
+        <form action="/accounts/hello_world/" method="POST">
+            {% csrf_token %}
+            <input type="submit" value="POST" class="btn btn-primary">
+        </form>
+        {{ text }}
     </div>
-
 {% endblock %}
