@@ -1,12 +1,21 @@
 {% extends 'base.html' %}
 
 {% block content %}
-    <div style="height: 20rem; background-color: #38df81; border-radius: 1rem; margin: 2rem; ">
+    <div style="text-align: center">
+        <h1 style="font-family: 'Zen Loop', cursive;">
+            Hello World List
+        </h1>
 
         <form action="/accounts/hello_world/" method="POST">
             {% csrf_token %}
+            <input type="text" name="hello_input">
             <input type="submit" value="POST" class="btn btn-primary">
         </form>
-        {{ text }}
+
+        {% if hello_world_output %}
+        <div>
+            {{hello_world_output.text}}
+        </div>
+        {% endif%}
     </div>
 {% endblock %}
