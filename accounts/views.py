@@ -1,4 +1,7 @@
+from django.http import HttpResponseRedirect
 from django.shortcuts import render
+from django.urls import reverse
+
 from accounts.models import HelloWorld
 
 
@@ -10,8 +13,10 @@ def hello_world(request):
         hello_world.text = temp
         hello_world.save()
 
-        return render(request, 'accounts/hello_world.html', context={"hello_world_output": hello_world})
+        hello_world_list = HelloWorld.objects.all()
+        return HttpResponseRedirect(reverse('accounts:hello_world'))
 
     # get
     else:
-        return render(request, 'accounts/hello_world.html', context={"hello_world_output": "GET METHOD"})
+        hello_world_list = HelloWorld.objects.all()
+        return render(request, 'accounts/hello_world.html', context={"hello_world_list": hello_world_list})
