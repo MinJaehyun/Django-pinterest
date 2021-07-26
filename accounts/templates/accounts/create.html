@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <!-- form 제출 시, create.html 로 이동할 수 있게 설정한다 -->
+    <div>
+        <form action="{% url 'accounts:create' %}" method="POST" >
+            {% csrf_token %}
+            {{ form }}
+            <input type="submit" value="POST">
+        </form>
+
+    </div>
+{% endblock %}
