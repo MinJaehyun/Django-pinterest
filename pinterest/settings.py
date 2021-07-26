@@ -2,6 +2,8 @@ import os, environ
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
+from django.urls import reverse_lazy
+
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 env = environ.Env(
@@ -127,3 +129,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 APPEND_SLASH = False
 
 AUTH_USER_MODEL = 'auth.User'
+
+LOGIN_REDIRECT_URL = reverse_lazy('account:hello_world')
+LOGOUT_REDIRECT_URL = reverse_lazy('account:login')
