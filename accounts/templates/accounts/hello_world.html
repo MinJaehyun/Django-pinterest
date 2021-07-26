@@ -12,10 +12,12 @@
             <input type="submit" value="POST" class="btn btn-primary">
         </form>
 
-        {% if hello_world_output %}
-        <div>
-            {{hello_world_output.text}}
-        </div>
+        {% if hello_world_list %}
+            {% for object in hello_world_list %}
+            <div>
+                {{ object.text }}
+            </div>
+            {% endfor%}
         {% endif%}
     </div>
 {% endblock %}
