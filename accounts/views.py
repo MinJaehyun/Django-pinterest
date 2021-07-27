@@ -11,6 +11,7 @@ from accounts.decorators import accounts_ownership_required
 from accounts.forms import AccountUpdateForm
 from accounts.models import HelloWorld
 
+has_ownership = [login_required, accounts_ownership_required]
 
 @login_required
 def hello_world(request):
@@ -42,10 +43,8 @@ class AccountsDetailView(DetailView):
     template_name = 'accounts/detail.html'
 
 
-@method_decorator(login_required, 'get')
-@method_decorator(login_required, 'post')
-@method_decorator(accounts_ownership_required, 'get')
-@method_decorator(accounts_ownership_required, 'post')
+@method_decorator(has_ownership, 'get')
+@method_decorator(has_ownership, 'post')
 class AccountsUpdateView(UpdateView):
     model = User
     form_class = AccountUpdateForm
@@ -54,10 +53,8 @@ class AccountsUpdateView(UpdateView):
     success_url = reverse_lazy('accounts:detail')
 
 
-@method_decorator(login_required, 'get')
-@method_decorator(login_required, 'post')
-@method_decorator(accounts_ownership_required, 'get')
-@method_decorator(accounts_ownership_required, 'post')
+@method_decorator(has_ownership, 'get')
+@method_decorator(has_ownership, 'post')
 class AccountsDeleteView(DeleteView):
     model = User
     context_object_name = 'target_user'
