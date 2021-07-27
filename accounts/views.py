@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.http import HttpResponseRedirect
 from django.shortcuts import render
 from django.urls import reverse, reverse_lazy
-from django.views.generic import CreateView, DetailView, UpdateView
+from django.views.generic import CreateView, DetailView, UpdateView, DeleteView
 
 from accounts.forms import AccountUpdateForm
 from accounts.models import HelloWorld
@@ -30,6 +30,7 @@ class AccountsCreateView(CreateView):
     # model, form_class, template_name, success_url 설정한다
     model = User
     form_class = UserCreationForm
+    context_object_name = "target_user"
     template_name = 'accounts/create.html'
     success_url = reverse_lazy('accounts:hello_world')
 
@@ -43,8 +44,13 @@ class AccountsDetailView(DetailView):
 class AccountsUpdateView(UpdateView):
     model = User
     form_class = AccountUpdateForm
+    context_object_name = "target_user"
     template_name = 'accounts/update.html'
     success_url = reverse_lazy('accounts:detail')
 
 
-
+class AccountsDeleteView(DeleteView):
+    model = User
+    context_object_name = "target_user"
+    template_name = 'accounts/delete.html'
+    success_url = reverse_lazy('accounts:login')

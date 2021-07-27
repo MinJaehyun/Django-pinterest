@@ -10,7 +10,8 @@
                 {{target_user.username}}
             </h4>
             {% if target_user == user %}
-                <a href="{% url 'accounts:update' pk=user.pk %}" class="btn btn-primary">비밀번호 변경</a>
+                <a href="{% url 'accounts:update' pk=target_user.pk %}" class="btn btn-primary">비밀번호 변경</a>
+                <a href="{% url 'accounts:delete' pk=target_user.pk %}" class="btn btn-danger">회원 탈퇴</a>
             {% endif %}
         </div>
     </div>
