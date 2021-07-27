@@ -7,7 +7,7 @@
         <div class="mb-5">
             <h4>Change Info</h4>
         </div>
-        <form action="{% url 'accounts:update' pk=user.pk %}" method="POST" >
+        <form action="{% url 'accounts:update' pk=target_user.pk %}" method="POST" >
             {% csrf_token %}
             {% bootstrap_form form %}
             <input type="submit" value="제출" class="btn btn-danger rounded-pill col-6 mt-3" />
