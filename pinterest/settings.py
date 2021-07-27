@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
-LANGUAGE_CODE = 'ko'
+LANGUAGE_CODE = 'en'
 
 TIME_ZONE = 'Asia/Seoul'
 
@@ -133,5 +133,6 @@ APPEND_SLASH = False
 
 AUTH_USER_MODEL = 'auth.User'
 
-LOGIN_REDIRECT_URL = reverse_lazy('account:hello_world')
-LOGOUT_REDIRECT_URL = reverse_lazy('account:login')
+LOGIN_REDIRECT_URL = reverse_lazy('accounts:hello_world')
+
+LOGOUT_REDIRECT_URL = reverse_lazy('accounts:login')
