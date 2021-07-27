@@ -10,21 +10,23 @@ from accounts.models import HelloWorld
 
 
 def hello_world(request):
-    # post
-    if request.method == "POST":
-        temp = request.POST.get('hello_input')
-        hello_world = HelloWorld()
-        hello_world.text = temp
-        hello_world.save()
+    if request.user.is_authenticated:
+        # post
+        if request.method == "POST":
+            temp = request.POST.get('hello_input')
+            hello_world = HelloWorld()
+            hello_world.text = temp
+            hello_world.save()
 
-        hello_world_list = HelloWorld.objects.all()
-        return HttpResponseRedirect(reverse('accounts:hello_world'))
+            hello_world_list = HelloWorld.objects.all()
+            return HttpResponseRedirect(reverse('accounts:hello_world'))
 
-    # get
+        # get
+        else:
+            hello_world_list = HelloWorld.objects.all()
+            return render(request, 'accounts/hello_world.html', context={"hello_world_list": hello_world_list})
     else:
-        hello_world_list = HelloWorld.objects.all()
-        return render(request, 'accounts/hello_world.html', context={"hello_world_list": hello_world_list})
-
+        return HttpResponseRedirect(reverse('accounts:login'))
 
 class AccountsCreateView(CreateView):
     model = User
@@ -45,6 +47,18 @@ class AccountsUpdateView(UpdateView):
     context_object_name = 'target_user'
     template_name = 'accounts/update.html'
     success_url = reverse_lazy('accounts:detail')
+
+    def get(self, *args, **kwargs):
+        if self.request.user.is_authenticated:
+            return super().get(*args, **kwargs)
+        else:
+            return HttpResponseRedirect(reverse('accounts:login'))
+
+    def post(self, *args, **kwargs):
+        if self.request.user.is_authenticated:
+            return super().post(*args,**kwargs)
+        else:
+            return HttpResponseRedirect(reverse('accounts:login'))
 
 
 class AccountsDeleteView(DeleteView):
