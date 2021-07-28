@@ -2,23 +2,28 @@
 
 {% block content %}
     <div style="text-align:center; max-width:500px; margin:4rem auto">
+        <img src="{{ target_user.profile.image.url }}" alt=""
+             style="height: 20rem; width:20rem; border-radius: 10rem; margin-bottom: 2rem;"
+        >
         <div>
-            <p>
-                {{target_user.date_joined}}
-            </p>
             {% if target_user.profile %}
-            <h4>
+            <h2 style="font-family: 'NanumSquareB'">
                 {{target_user.profile.nickname}}
-            </h4>
+                <!-- <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">edit</a> -->
+            </h2>
             {% else %}
-                <a href="{% url 'profileapp:create' %}">
-                    Create page
-                </a>
+            <a href="{% url 'profileapp:create' %}">
+                Create page
+            </a>
             {% endif %}
 
+            <h5 style="margin-bottom: 3rem;">
+                {{target_user.profile.message}}
+            </h5>
+
             {% if target_user == user %}
-                <a href="{% url 'accounts:update' pk=target_user.pk %}" class="btn btn-primary">비밀번호 변경</a>
-                <a href="{% url 'accounts:delete' pk=target_user.pk %}" class="btn btn-danger">회원 탈퇴</a>
+            <a href="{% url 'accounts:update' pk=target_user.pk %}" class="btn btn-primary"><p>비밀번호 변경</p></a>
+            <a href="{% url 'accounts:delete' pk=target_user.pk %}" class="btn btn-danger"><p>회원 탈퇴</p></a>
             {% endif %}
         </div>
     </div>
