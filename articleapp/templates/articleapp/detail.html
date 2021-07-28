@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div style="text-align: center">
+        <h1>{{target_article.title}}</h1>
+        <img src="{{target_article.image.url}}" c>
+        <p>{{target_article.content}}</p>
+        <a href="{% url 'articleapp:update' pk=target_article.pk %}" class="btn btn-primary">change article</a>
+        <a href="{% url 'articleapp:delete' pk=target_article.pk %}" class="btn btn-danger">delete article</a>
+    </div>
+{% endblock %}
