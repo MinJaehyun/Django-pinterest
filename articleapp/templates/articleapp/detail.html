@@ -3,9 +3,21 @@
 {% block content %}
     <div style="text-align: center">
         <h1>{{target_article.title}}</h1>
-        <img src="{{target_article.image.url}}" c>
+        <h5>{{target_article.writer.profile.nickname}}</h5>
+        <hr>
+        <img style="border-radius: 1rem; margin: 2rem 0;" src="{{target_article.image.url}}">
         <p>{{target_article.content}}</p>
-        <a href="{% url 'articleapp:update' pk=target_article.pk %}" class="btn btn-primary">change article</a>
-        <a href="{% url 'articleapp:delete' pk=target_article.pk %}" class="btn btn-danger">delete article</a>
+        {% if target_article.writer == user %}
+        <a href="{% url 'articleapp:update' pk=target_article.pk %}" class="btn btn-primary">
+            Update
+        </a>
+        <a href="{% url 'articleapp:delete' pk=target_article.pk %}" class="btn btn-danger">
+            Delete
+        </a>
+        {% endif %}
+        <hr>
+
+        {% include 'commentapp/create.html' with article=target_article %}
+
     </div>
 {% endblock %}
