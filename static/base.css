@@ -6,3 +6,8 @@
     margin-top: 1rem; font-family: 'Zen Loop', cursive;
 }
 
+@media screen and (max-width:500px) {
+    html {
+        font-size: 13px;
+    }
+}
