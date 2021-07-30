@@ -6,8 +6,34 @@
     margin-top: 1rem; font-family: 'Zen Loop', cursive;
 }
 
+.pinterest_header {
+    text-align:center;
+    margin: 2rem 0;
+}
+
+.pinterest_logo {
+    font-family: 'Zen Loop', cursive;
+}
+
 @media screen and (max-width:500px) {
     html {
         font-size: 13px;
     }
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: black;
+    text-decoration: none;
+}
+
+.pinterest_header_nav {
+    margin: 0 0.5rem;
+}
+
+.pinterest_header_navbar {
+    margin: 1rem 0;
 }

@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     # Third Apps
     'bootstrap4',
     # Local Apps
+    'projectapp',
     'commentapp',
     'articleapp',
     'profileapp',
