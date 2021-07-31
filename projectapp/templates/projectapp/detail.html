@@ -7,5 +7,9 @@
              src="{{target_project.image.url}}">
         <p>{{target_project.description}}</p>
         <hr>
+
+        <div>
+            {% include 'snippets/list_fragment.html' with article_list=object_list %}
+        </div>
     </div>
 {% endblock %}
