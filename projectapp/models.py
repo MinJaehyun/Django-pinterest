@@ -6,3 +6,6 @@ class Project(models.Model):
     description = models.TextField()  # TODO: CharField() 설정했는데, Text로 진행해보기
     image       = models.ImageField(upload_to='project/%Y%m%d')  # media/project/날짜
     created_at  = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.pk} : {self.title}'
