@@ -14,6 +14,7 @@ from articleapp.models import Article
 
 has_ownership = [login_required, accounts_ownership_required]
 
+
 @login_required
 def hello_world(request):
         # post
