@@ -2,6 +2,7 @@
 
 {% block content %}
     <div style="text-align:center; max-width:500px; margin:4rem auto">
+
         {% if target_user.profile %}
         <img src="{{ target_user.profile.image.url }}" alt=""
              style="height: 20rem; width:20rem; border-radius: 10rem; margin-bottom: 2rem;"
@@ -13,7 +14,11 @@
             <h2 style="font-family: 'NanumSquareB'">
                 {{target_user.profile.nickname}}
                 {% if target_user == user %}
-                 <a href="{% url 'profileapp:update' pk=target_user.profile.pk %}">edit</a>
+                <a class="material-icons"
+                   style="box-shadow: 0 0 4px #ccc; border-radius: 10rem; padding: .4rem;"
+                   href="{% url 'profileapp:update' pk=target_user.profile.pk %}">
+                    edit
+                </a>
                 {% endif %}
             </h2>
             {% else %}
@@ -27,12 +32,26 @@
                 {{target_user.profile.message}}
             </h5>
 
-            {% include 'snippets/list_fragment.html' with article_list=object_list %}
 
             {% if target_user == user %}
-            <a href="{% url 'accounts:update' pk=target_user.pk %}" class="btn btn-primary"><p>비밀번호 변경</p></a>
-            <a href="{% url 'accounts:delete' pk=target_user.pk %}" class="btn btn-danger"><p>회원 탈퇴</p></a>
+            <div class="mb-5">
+                <a class="material-icons"
+                   style="box-shadow: 0 0 4px #ccc; border-radius: 10rem; padding: .4rem;"
+                   href="{% url 'accounts:update' pk=user.pk %}">
+                    published_with_changes
+                </a>
+                <a class="material-icons"
+                   style="box-shadow: 0 0 4px #fcc; border-radius: 10rem; padding: .4rem;"
+                   href="{% url 'accounts:delete' pk=user.pk %}">
+                    delete
+                </a>
+            </div>
             {% endif %}
+
+            <div>
+                {% include 'snippets/list_fragment.html' with article_list=object_list %}
+            </div>
+
         </div>
     </div>
 {% endblock %}
