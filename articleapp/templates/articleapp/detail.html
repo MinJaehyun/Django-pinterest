@@ -7,7 +7,9 @@
         <!-- FIXME: nickname 안되는 이유? 확인하기 -->
 
         <img style="border-radius: 1rem; margin: 2rem 0;" src="{{target_article.image.url}}">
-        <p>{{target_article.content}}</p>
+        <div class="text-left">
+            <p>{{target_article.content | safe}}</p>
+        </div>
 
         <!-- 게시글의 작성자가 본인일 경우에만, update, delete 사용할 수 있다 -->
         {% if target_article.writer == user %}

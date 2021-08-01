@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     # Third Apps
     'bootstrap4',
     # Local Apps
+    'subscribeapp',
     'projectapp',
     'commentapp',
     'articleapp',
@@ -141,5 +142,5 @@ APPEND_SLASH = False
 
 AUTH_USER_MODEL = 'auth.User'
 
-LOGIN_REDIRECT_URL = reverse_lazy('accounts:hello_world')
+LOGIN_REDIRECT_URL = reverse_lazy('articleapp:list')
 LOGOUT_REDIRECT_URL = reverse_lazy('accounts:login')
