@@ -1,4 +1,4 @@
-FROM python:3.9
+FROM python:3.9.0
 
 WORKDIR /home/
 
@@ -8,11 +8,11 @@ WORKDIR /home/pinterest
 
 RUN pip install -r requirements.txt
 
+RUN echo "SECRET_KEY=django-insecure-3j@6zjb-ki0%hwy^8j25uz0_)!3&#1((y_t)^o**#n9oi4(6+s" > .env
+
 RUN python manage.py migrate
 
 RUN pip install gunicorn
-
-RUN echo "SECRET_KEY=django-insecure-3j@6zjb-ki0%hwy^8j25uz0_)!3&#1((y_t)^o**#n9oi4(6+s" > . env
 
 EXPOSE 8000
 
