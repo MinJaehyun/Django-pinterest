@@ -12,6 +12,8 @@ RUN echo "SECRET_KEY=django-insecure-3j@6zjb-ki0%hwy^8j25uz0_)!3&#1((y_t)^o**#n9
 
 RUN python manage.py migrate
 
+RUN python manage.py collectstatic  # django_test_image:3
+
 RUN pip install gunicorn
 
 EXPOSE 8000
