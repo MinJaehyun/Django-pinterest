@@ -1,4 +1,4 @@
-import os
+import os, environ  # environ 삭제하지 말것!! 다른곳에서 참조하고 있다!
 
 from pathlib import Path
 
