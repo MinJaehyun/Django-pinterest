@@ -1,9 +1,10 @@
 from django.urls import path
 
-from subscribeapp.views import SubscriptionView
+from subscribeapp.views import SubscriptionView, SubscriptionListView
 
 app_name = 'subscribeapp'
 
 urlpatterns = [
-    path('subscribe/', SubscriptionView.as_view(), name='subscribe')
-]  # FIXME: <int:pk> 없었는데 넣으면?
+    path('list/', SubscriptionListView.as_view(), name='list'),
+    path('subscribe/', SubscriptionView.as_view(), name='subscribe'),
+]
