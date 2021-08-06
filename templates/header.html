@@ -21,7 +21,7 @@
         <a href="{% url 'accounts:login' %}?next={{ request.path }}" class="pinterest_header_nav" style="text-decoration: none;">
             <span>Login</span>
         </a>
-        <a href="{% url 'accounts:create' %}" class="pinterest_header_nav">
+        <a href="{% url 'accounts:create' %}" class="pinterest_header_nav" style="text-decoration: none;">
             <span>Signup</span>
         </a>
         {% else %}
