@@ -31,9 +31,9 @@ services:
       - MYSQL_ROOT_PASSWORD
     environment:
       MYSQL_USER: django
-      MYSQL_PASSWORD: django
+      MYSQL_PASSWORD_FILE: /run/secrets/MYSQL_PASSWORD
       MYSQL_ROOT_PASSWORD_FILE: /run/secrets/MYSQL_ROOT_PASSWORD
-      MYSQL_DATABASE_FILE: /run/secrets/MYSQL_PASSWORD
+      MYSQL_DATABASE: django
 
 networks:
   network:
