@@ -2,7 +2,7 @@ FROM python:3.9.0
 
 WORKDIR /home/
 
-RUN echo "test21.08.06.21"
+RUN echo "test21.08.06.22-2"
 
 RUN git clone https://github.com/Minjaehyun/pinterest.git
 
