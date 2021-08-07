@@ -1,37 +1,75 @@
-# pinterest
-- pinterest 웹사이트를 벤치마킹
-- 15일 이라는 짧은 기간 동안 기획, 디자인에 소요되는 시간을 단축시키고 화면 & 기능 구현과 리팩토링에 중점을 두기 위한 프로젝트
-<br>
-<hr />
-
-### 프로젝트 기간 및 인원
-2021.07.23 ~ 2021.08.06. 
-
+# 🐍Pinterest
+    - Python 의 대표 웹 프레임워크인 django를 통해 핀터레스트 특유의 카드형 레이아웃을 벤치마킹한 웹서비스를 만들었습니다.
+    - 15일 이라는 짧은 기간 동안 기획, 디자인에 소요되는 시간을 단축시키고 화면 & 기능 구현과 리팩토링에 중점을 두기 위한 프로젝트입니다.
 <br>
 
-Frontend & Backend  
-- [민재현](https://github.com/minjaehyun)
-<hr />
+## 🐝프로젝트 기간 및 인원
+    2021.07.23 ~ 2021.08.06. 
+- [민재현](https://github.com/MinJaehyun/pinterest)
 
-### Frontend
-<ul>
-<li><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/d63d473e728e20a286d22bb2226a7bf45a2b9ac6c72c59c0e61e9730bfe4168c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465"><img src="https://camo.githubusercontent.com/d63d473e728e20a286d22bb2226a7bf45a2b9ac6c72c59c0e61e9730bfe4168c/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f48544d4c352d4533344632363f7374796c653d666f722d7468652d6261646765266c6f676f3d68746d6c35266c6f676f436f6c6f723d7768697465" alt="HTML" data-canonical-src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&amp;logo=html5&amp;logoColor=white" style="max-width:100%;"></a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/9d07c04bdd98c662d5df9d4e1cc1de8446ffeaebca330feb161f1fb8e1188204/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b"><img src="https://camo.githubusercontent.com/9d07c04bdd98c662d5df9d4e1cc1de8446ffeaebca330feb161f1fb8e1188204/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a6176615363726970742d4637444631453f7374796c653d666f722d7468652d6261646765266c6f676f3d6a617661736372697074266c6f676f436f6c6f723d626c61636b" alt="JS" data-canonical-src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&amp;logo=javascript&amp;logoColor=black" style="max-width:100%;"></a></li>
-</ul>
+<br>
 
-### Backend
-<ul>
+## 🌎배포 사이트 
+- [weone.website](https://www.weone.website)
 
-<li><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/27250b9f428b32314f8610e1a996939cc116da5f8c4d8a2f8ed37104275085b8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3134333534433f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465"><img src="https://camo.githubusercontent.com/27250b9f428b32314f8610e1a996939cc116da5f8c4d8a2f8ed37104275085b8/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f507974686f6e2d3134333534433f7374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465" alt="Python" data-canonical-src="https://img.shields.io/badge/Python-14354C?style=for-the-badge&amp;logo=python&amp;logoColor=white" style="max-width:100%;"></a></li>
-<li><a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/4d74b36962a1b06aed5f035f2f95f131059b2b551c7e6d81630f7df7831b9f80/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446a616e676f2d3039324532303f7374796c653d666f722d7468652d6261646765266c6f676f3d646a616e676f266c6f676f436f6c6f723d7768697465"><img src="https://camo.githubusercontent.com/4d74b36962a1b06aed5f035f2f95f131059b2b551c7e6d81630f7df7831b9f80/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f446a616e676f2d3039324532303f7374796c653d666f722d7468652d6261646765266c6f676f3d646a616e676f266c6f676f436f6c6f723d7768697465" alt="Django" data-canonical-src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&amp;logo=django&amp;logoColor=white" style="max-width:100%;"></a></li>
-</ul>
+<br>
 
-### 사용한 tool
-<ul>
-<li>
-<a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/60ced9d0b93df96cf8b0c2249a2f225fc851ecf9ec2db9200b7a27bd6b72c64a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d2532334630353033332e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465"><img alt="Git" src="https://camo.githubusercontent.com/60ced9d0b93df96cf8b0c2249a2f225fc851ecf9ec2db9200b7a27bd6b72c64a/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769742d2532334630353033332e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d676974266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/git-%23F05033.svg?&amp;style=for-the-badge&amp;logo=git&amp;logoColor=white" style="max-width:100%;"></a>
-</li>
-<li>
-<a target="_blank" rel="noopener noreferrer" href="https://camo.githubusercontent.com/484e674f91650af15c7b80cd40d2870109044c4e8e1418b81920e49fd24111b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622d2532333132313031312e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465"><img alt="GitHub" src="https://camo.githubusercontent.com/484e674f91650af15c7b80cd40d2870109044c4e8e1418b81920e49fd24111b1/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6769746875622d2532333132313031312e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d676974687562266c6f676f436f6c6f723d7768697465" data-canonical-src="https://img.shields.io/badge/github-%23121011.svg?&amp;style=for-the-badge&amp;logo=github&amp;logoColor=white" style="max-width:100%;"></a>
-</li>
-</ul>
+## ⚡️적용 기술
+    Front-End : Html5, css, javascript, django-bootstrap4, 
+    Back-End  : Python, Django web framework, mariadb, Nginx, Gunicorn,  
+    Common    : POSTMAN, FileZilla, Git, Github, Docker, Portainer, AWS EC2, AWS Load Balancer, AWS Route53, AWS Elastic IP, 
+<br>
+<br>
+
+# 💡구현 기능
+
+## Front-End
+    # TODO: 작성하기
+<br>
+<br>
+
+
+## Back-End
+### Accounts App 
+    - 회원가입 
+    - MyPage                 (paginate_by = 5)
+    - 비밀번호 변경           (login_required, account_ownership_required)
+    - 회원탈퇴               (login_required, account_ownership_required)
+    - 로그인, 로그아웃
+
+### Article App
+    - 게시글 생성            (login_required)
+    - 게시글 뷰
+    - 게시글 변경            (article_ownership_required)
+    - 게시글 삭제            (article_ownership_required)
+    - 모든 게시글의 목록 뷰   (paginate_by = 5)
+
+### Project App
+    - 프로젝트 생성           (login_required ) 
+    - 프로젝트 상세 뷰        (paginate_by = 25) 
+    - 프로젝트 리스트 뷰      (paginate_by = 25)  
+
+### Comment App
+    - 댓글 생성
+    - 댓글 삭제               (comment_ownership_required)
+    
+### Profile App
+    - 프로필 생성
+    - 프로필 변경             (profile_ownership_required)
+
+### Subscribe App
+    * 구독 기능 구현          (login_required)
+    * 구독한 프로젝트의 모든 게시글을 보여주는 기능 구현 (login_required) (paginate_by = 5)
+
+### Deploy
+    - 개발 환경과 배포 환경을 분리하였습니다.
+
+    - AWS EC2 에 Docker 를 설치했습니다.
+    - Docker 안에는 django, nginx, gunicorn 을 컨테이너로 만들어 적용 했습니다.
+    - Docker 는 GUI 프로그램인 Portainer 를 사용했습니다.
+    - Docker Swarm 에 SECRET_KEY 사용하여 보안을 적용 했습니다.
+    - docker-compose.yml 로 손쉽게 배포 적용 했습니다.
+
+    - AWS Route53 설정하고 도메인 및 EC2 와 연결하여 도메인 이름을 설정하였습니다. 
+    - AWS Load Balancer 사용하여 https 적용하여 보안을 높였습니다.
+    - AWS Elastic IP 적용 하였습니다.  
