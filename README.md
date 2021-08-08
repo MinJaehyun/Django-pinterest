@@ -30,7 +30,7 @@
 ## 👉Back-End
 
 ### API Endpoint
-![image](https://user-images.githubusercontent.com/43669992/128621658-a18a63e7-f674-4160-bd33-a571d1e0fe08.png)
+![image](https://user-images.githubusercontent.com/43669992/128622814-c27dd7f3-5236-473a-81ae-12a621e85dae.png)
 <br><br>
 
 ### 모델링
