@@ -9,7 +9,7 @@
 
 <br>
 
-## 🌎배포 사이트 
+## 🌎배포 
 - [weone.website](https://www.weone.website)
 
 <br>
@@ -30,7 +30,11 @@
 ## 👉Back-End
 
 ### API Endpoint
-![image](https://user-images.githubusercontent.com/43669992/128621265-7bf72216-e5e3-40d2-93bb-1f62d8079f61.png)
+![image](https://user-images.githubusercontent.com/43669992/128621658-a18a63e7-f674-4160-bd33-a571d1e0fe08.png)
+<br><br>
+
+### 모델링
+    # TODO: 작성하기
 <br><br>
 
 ### Accounts App 
