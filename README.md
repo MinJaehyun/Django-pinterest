@@ -30,7 +30,7 @@
 ## 👉Back-End
 
 ### API Endpoint
-![image](https://user-images.githubusercontent.com/43669992/128618868-e57e7efb-0aed-435d-b864-9316ed8d44e4.png)
+![image](https://user-images.githubusercontent.com/43669992/128621265-7bf72216-e5e3-40d2-93bb-1f62d8079f61.png)
 <br><br>
 
 ### Accounts App 
