@@ -18,18 +18,21 @@
     Front-End : Html5, css, javascript, django-bootstrap4, 
     Back-End  : Python, Django web framework, mariadb, Nginx, Gunicorn,  
     Common    : POSTMAN, FileZilla, Git, Github, Docker, Portainer, AWS EC2, AWS Load Balancer, AWS Route53, AWS Elastic IP, 
-<br>
-<br>
+<br><br>
 
 # 💡구현 기능
 
-## Front-End
+## 👉Front-End
     # TODO: 작성하기
-<br>
-<br>
+<br><br>
 
 
-## Back-End
+## 👉Back-End
+
+### API Endpoint
+![image](https://user-images.githubusercontent.com/43669992/128618868-e57e7efb-0aed-435d-b864-9316ed8d44e4.png)
+<br><br>
+
 ### Accounts App 
     - 회원가입 
     - MyPage                 (paginate_by = 5)
