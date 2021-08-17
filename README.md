@@ -23,7 +23,7 @@
 # 💡구현 기능
 
 ## 👉Front-End
-    # TODO: 작성하기
+    
 <br><br>
 
 
@@ -33,8 +33,8 @@
 ![image](https://user-images.githubusercontent.com/43669992/128622814-c27dd7f3-5236-473a-81ae-12a621e85dae.png)
 <br><br>
 
-### 모델링
-    # TODO: 작성하기
+
+    
 <br><br>
 
 ### Accounts App 
