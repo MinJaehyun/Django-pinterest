@@ -33,7 +33,8 @@
 ![image](https://user-images.githubusercontent.com/43669992/128622814-c27dd7f3-5236-473a-81ae-12a621e85dae.png)
 <br><br>
 
-
+### DB Schema
+![DBSchema](https://user-images.githubusercontent.com/43669992/134665480-9f525169-e9ce-4d89-83cd-5489dc31abb6.png)
     
 <br><br>
 
