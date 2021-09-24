@@ -18,6 +18,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     # Third Apps
     'bootstrap4',
+    'django_extensions',
     # Local Apps
     'subscribeapp',
     'projectapp',
@@ -113,3 +114,8 @@ APPEND_SLASH = False
 
 LOGIN_REDIRECT_URL = reverse_lazy('home')
 LOGOUT_REDIRECT_URL = reverse_lazy('accounts:login')
+
+GRAPH_MODELS = {
+  'all_applications': True,
+  'group_models': True,
+}
