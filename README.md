@@ -9,11 +9,6 @@
 
 <br>
 
-## 🌎배포 
-- [weone.website](https://www.weone.website)
-
-<br>
-
 ## ⚡️적용 기술
     Front-End : Html5, css, javascript, django-bootstrap4, 
     Back-End  : Python, Django web framework, mariadb, Nginx, Gunicorn,  
